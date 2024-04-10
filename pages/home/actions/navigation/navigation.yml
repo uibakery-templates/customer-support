@@ -1,0 +1,32 @@
+id: '16389600784670.007506849720144038'
+name: navigation
+nameConfigured: true
+steps:
+  - id: '16389600821470.16836930154406993'
+    type: navigation
+    params:
+      - type: url
+        value: '{{ routes.addCustomer.url }}'
+        valueType: interpolatedValue
+      - type: queryParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.navigation.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.navigation.name}}" successfully executed
+  showErrorToast: false
+  errorToast: Action "{{actions.navigation.name}}" has failed
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+parentPageId: '1'
+kind: workflow

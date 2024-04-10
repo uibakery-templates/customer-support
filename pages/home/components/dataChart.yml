@@ -1,0 +1,44 @@
+id: '16388885652970.25195266320011656'
+definitionId: chart
+parentSlotId: '2'
+styles:
+  xl:
+    legend:
+      visible: true
+      orientation: vertical
+      horizontal: right
+      vertical: top
+    gridItem:
+      x: 12
+      y: 14
+      w: 12
+      h: 75
+properties:
+  lineSmooth: true
+  name: dataChart
+  title: Tickets in Progress
+  structure:
+    - title: Data
+      color: primary
+      xProp: Pricing Plan
+      yProp: Tickets In Progress
+      __UIBAKERY__SYSTEM_ID__: '16388885655510.13056099847264824'
+      disabled: false
+      disableColors: true
+      disabledTooltip: ''
+      groupType: value
+      groupFunctionType: sum
+  dataset: '{{actions.loadCustomers.data}}'
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadCustomers.loading}}'
+    value: false
+  type: pieChart
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  barsWidth: 30
+  barsRounderdCorners: true
+actions: {}
+index: 5
+slots: []

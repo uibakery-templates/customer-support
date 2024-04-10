@@ -1,0 +1,73 @@
+id: '16388878481580.2336772867363508'
+definitionId: metric
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 14
+      w: 6
+      h: 25
+properties:
+  name: customerMetric
+  title: Customers x Support Rep
+  operation: count
+  groupType: value
+  data: '{{actions.loadCustomers.data}}'
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadCustomers.loading}}'
+    value: false
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+index: 4
+slots:
+  - id: '16388878481580.1877966959400954'
+    name: metricField
+    children:
+      - id: '16388878483360.3748563210988486'
+        definitionId: atomicNumber
+        parentSlotId: '16388878481580.1877966959400954'
+        styles:
+          xl:
+            color:
+              value: basic
+              dataValue: '{{ ui.customerMetric.value.main >= 15 ? ''danger'' : ''success'' }}'
+              withData: true
+        properties:
+          name: atomicNumber9
+          prop: first_name
+          mappedValue: ''
+          textStyle:
+            transform: none
+            styles:
+              - bold
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []
+  - id: '16388878481580.26122595228389267'
+    name: additionalField
+    children: []
+  - id: '16388878481580.04325269826113942'
+    name: groupByField
+    children:
+      - id: '16388878483360.05371352328819423'
+        definitionId: atomicString
+        styles: {}
+        properties:
+          name: atomicString21
+          prop: Support Representative
+          primaryKey: false
+          textStyle:
+            transform: none
+            styles: []
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16388878481580.04325269826113942'
+        index: 1
+        slots: []

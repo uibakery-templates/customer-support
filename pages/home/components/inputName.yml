@@ -1,0 +1,31 @@
+id: '16388858650550.3609093441626712'
+definitionId: input
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 89
+      w: 6
+      h: 9
+properties:
+  name: inputName
+  labelConfig:
+    text: ''
+    position: horizontal
+    align: left
+  iconPlacement: start
+  icon:
+    value: search-outline
+    dataValue: star-outline
+    withData: false
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  placeholder: Name
+actions:
+  inputChange:
+    - action: '16388853785530.8737086821296649'
+      paramCode: ''
+index: 3
+slots: []

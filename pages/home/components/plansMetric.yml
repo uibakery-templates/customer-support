@@ -1,0 +1,47 @@
+id: '16388890574390.8643103372188097'
+definitionId: metric
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 64
+      w: 6
+      h: 25
+properties:
+  name: plansMetric
+  title: Free plan customers
+  operation: sum
+  groupType: value
+  data: '{{actions.planMetrics.data}}'
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadCustomers.loading}}'
+    value: false
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+index: 7
+slots:
+  - id: '16388890574390.6521691807332762'
+    name: metricField
+    children:
+      - id: '16388890576180.8062257219765506'
+        definitionId: atomicNumber
+        parentSlotId: '16388890574390.6521691807332762'
+        styles: {}
+        properties:
+          name: atomicNumber13
+          prop: Free
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []
+  - id: '16388890574390.8272254394998904'
+    name: additionalField
+    children: []
+  - id: '16388890574390.15198894570072696'
+    name: groupByField
+    children: []

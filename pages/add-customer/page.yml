@@ -1,0 +1,25 @@
+id: '16389599681310.6457448480161444'
+name: add customer
+url: add-customer
+parentPageId: ''
+slots:
+  - id: '16389599681310.3041271723844463'
+    name: content
+    children:
+      - id: '16389599681310.3147911612504001'
+        definitionId: grid
+        parentSlotId: '16389599681310.3041271723844463'
+        styles: {}
+        properties:
+          name: add-customer
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '16389599681320.12264606340704842'
+            name: content
+            children:
+              - components/dataForm.yml
+              - components/heading2.yml

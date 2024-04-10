@@ -1,0 +1,48 @@
+id: '16389601155340.8311000646615423'
+name: addCustomer
+nameConfigured: true
+steps:
+  - id: '16389601200500.1609915955659974'
+    type: CREATE_ENTITY
+    params:
+      - type: datasourceId
+        value: Customer Support
+        valueType: string
+      - type: resourceId
+        value: data
+        valueType: string
+      - type: entity
+        value: ./16389601200500.1609915955659974-entity.yml
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+assigned: true
+selected: true
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.addCustomer.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.addCustomer.name}}" successfully executed
+  showErrorToast: false
+  errorToast: Action "{{actions.addCustomer.name}}" has failed
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+actions:
+  success:
+    - action: '16388853785530.8737086821296649'
+      paramCode: ''
+mode: manual
+parentPageId: '16389599681310.6457448480161444'
+kind: workflow

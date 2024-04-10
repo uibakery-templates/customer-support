@@ -1,0 +1,22 @@
+id: '16388858124900.966947480064244'
+definitionId: heading
+parentSlotId: '2'
+styles:
+  xl:
+    fontSize:
+      customValue: 28
+      customUnit: px
+    gridItem:
+      x: 0
+      y: 0
+      w: 11
+      h: 12
+properties:
+  name: heading
+  text: Customers Support Dashboard
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+index: 2
+slots: []

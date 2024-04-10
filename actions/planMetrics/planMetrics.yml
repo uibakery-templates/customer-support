@@ -1,0 +1,60 @@
+id: '17029964630600.9369857209156562'
+kind: workflow
+name: planMetrics
+nameConfigured: true
+steps:
+  - id: '17029964724290.3661347340528871'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '16388853785530.8737086821296649'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: ./execute-customParams.js
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '17029964964570.7166935544467408'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.planMetrics.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.planMetrics.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.planMetrics.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: true
+selected: true
+configured: false

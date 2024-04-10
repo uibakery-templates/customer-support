@@ -1,0 +1,60 @@
+id: '16388853785530.8737086821296649'
+name: loadCustomers
+nameConfigured: true
+steps:
+  - id: '16388853806940.9456444816976292'
+    type: LOAD_COLLECTION
+    params:
+      - type: datasourceId
+        value: Customer Support
+        valueType: string
+      - type: resourceId
+        value: data
+        valueType: string
+      - type: filters
+        value:
+          - column: first_name
+            operation: '='
+            value:
+              value: '{{ ui.inputName.value }}'
+        valueType: custom
+      - type: ordering
+        value:
+          limit:
+            value: ''
+          offset:
+            value: ''
+          orderBy:
+            value: ''
+          orderDirection:
+            value: asc
+        valueType: custom
+      - type: additionalParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadCustomers.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadCustomers.name}}" successfully executed
+  showErrorToast: false
+  errorToast: Action "{{actions.loadCustomers.name}}" has failed
+  delay: '0'
+  runWhenFirstReferenced: true
+assigned: true
+kind: workflow

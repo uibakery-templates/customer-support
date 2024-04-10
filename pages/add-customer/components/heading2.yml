@@ -1,0 +1,19 @@
+id: '16389599877220.4884804751488565'
+definitionId: heading
+parentSlotId: '16389599681320.12264606340704842'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 8
+      h: 10
+properties:
+  name: heading2
+  text: New Customer Details
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+index: 1
+slots: []

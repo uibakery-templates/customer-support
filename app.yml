@@ -1,0 +1,15 @@
+storeItemList: []
+metadata:
+  favicon: ''
+  code: ''
+  title: Customer Support Tool
+  description: ''
+  breakpoints: []
+  rendererCachingEnabled: false
+appSettings:
+  properties:
+    defaultData: '{}'
+  actions: {}
+  gridVersion: 2
+  density: compact
+internalType: project

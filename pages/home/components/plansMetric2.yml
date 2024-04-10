@@ -1,0 +1,52 @@
+id: '17029968376170.8824512905697497'
+definitionId: metric
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 6
+      y: 64
+      w: 6
+      h: 25
+  xs:
+    gridItem:
+      x: 0
+      y: 264
+      w: 24
+      h: 25
+properties:
+  data: '{{actions.planMetrics.data}}'
+  name: plansMetric2
+  title: Enterprise plan customers
+  operation: sum
+  groupType: value
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadCustomers.loading}}'
+    value: false
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+slots:
+  - id: '17029968376170.40451370620885796'
+    name: metricField
+    children:
+      - id: '17029968376170.738922635422437'
+        definitionId: atomicNumber
+        styles: {}
+        properties:
+          name: atomicNumber14
+          prop: Enterprise
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '17029968376170.40451370620885796'
+        index: 0
+        slots: []
+  - id: '17029968376170.05439916199190575'
+    name: additionalField
+    children: []
+  - id: '17029968376170.7143481998224155'
+    name: groupByField
+    children: []

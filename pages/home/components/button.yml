@@ -1,0 +1,31 @@
+id: '16388890116590.20056267071099165'
+definitionId: button
+parentSlotId: '2'
+styles:
+  xl:
+    iconPlacement: left
+    gridItem:
+      x: 20
+      y: 89
+      w: 4
+      h: 9
+properties:
+  name: button
+  text: Add Customer
+  status:
+    value: success
+    dataValue: primary
+    withData: false
+  icon:
+    value: person-add
+    dataValue: star-outline
+    withData: false
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions:
+  buttonClick:
+    - action: '16389600784670.007506849720144038'
+      paramCode: ''
+index: 6
+slots: []

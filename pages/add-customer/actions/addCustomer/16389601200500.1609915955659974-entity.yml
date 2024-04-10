@@ -1,0 +1,30 @@
+mode: custom
+valueByMode:
+  structured:
+    first_name:
+      value: ''
+    last_name:
+      value: ''
+    email:
+      value: ''
+    Tickets Raised:
+      value: ''
+    Tickets In Progress:
+      value: ''
+    Company:
+      value: ''
+    Job Title:
+      value: ''
+    Trial User?:
+      value: ''
+    Trial Ends:
+      value: ''
+    Pricing Plan:
+      value: ''
+    Support Representative:
+      value: ''
+    Monthly Payment:
+      value: ''
+    Active Months:
+      value: ''
+  custom: '{{ ui.dataForm.value }}'

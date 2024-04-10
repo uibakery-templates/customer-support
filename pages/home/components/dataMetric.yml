@@ -1,0 +1,75 @@
+id: '16389743396250.6762410610618166'
+definitionId: metric
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 39
+      w: 6
+      h: 25
+properties:
+  name: dataMetric
+  title: Trial vs Paid Customers
+  operation: count
+  groupType: value
+  data: '{{actions.loadCustomers.data}}'
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadCustomers.loading}}'
+    value: false
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+index: 8
+slots:
+  - id: '16389743396250.2025914958281685'
+    name: metricField
+    children:
+      - id: '16389743396860.7887830343954055'
+        definitionId: atomicNumber
+        parentSlotId: '16389743396250.2025914958281685'
+        styles: {}
+        properties:
+          name: atomicNumber8
+          prop: first_name
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []
+  - id: '16389743396250.07634173932222166'
+    name: additionalField
+    children:
+      - id: '16389743396860.0831865735478654'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString8
+          prop: last_name
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16389743396250.07634173932222166'
+        index: 2
+        slots: []
+  - id: '16389743396250.8955340576781035'
+    name: groupByField
+    children:
+      - id: '16389743396860.3788759520074675'
+        definitionId: atomicString
+        styles: {}
+        properties:
+          name: atomicString20
+          prop: Trial User?
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16389743396250.8955340576781035'
+        index: 1
+        slots: []
